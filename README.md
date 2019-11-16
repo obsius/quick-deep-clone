@@ -46,16 +46,16 @@ console.log(qdclone(new A(), true));
 console.log(qdclone(new A(), false));
 ```
 
-## Performance
+## Benchmarks
 
 Package | Time (ms)
 -|-
 deep-clone@3.0.3 | 1361
 rfdc@1.1.4 | 1048
 qdclone | 441
-qdclone (w/casting) | 525
+qdclone (*\*w/casting*) | 525
 
-* only `quick-deep-clone` supports casting prototypes
+*\* only `quick-deep-clone` supports casting prototypes*
 
 ```js
 const { performance } = require('perf_hooks');

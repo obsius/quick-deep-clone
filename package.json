@@ -1,6 +1,6 @@
 {
 	"name": "quick-deep-clone",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Quick deep clone.",
 	"author": "Jeff Seaman <mr.jeffrey.seaman@gmail.com> (https://www.ngc6822.com)",
 	"main": "index.js",
