@@ -1,11 +1,26 @@
 {
 	"name": "quick-deep-clone",
-	"version": "1.0.1",
-	"description": "Quick and dangerous deep clone.",
-	"author": "Jeff Seaman",
-	"contributors": [
-		"Jeff Seaman <mr.jeffrey.seaman@gmail.com> (https://www.ngc6822.com)"
-	],
+	"version": "1.0.2",
+	"description": "Quick deep clone.",
+	"author": "Jeff Seaman <mr.jeffrey.seaman@gmail.com> (https://www.ngc6822.com)",
+	"main": "index.js",
 	"license": "MIT",
-	"main": "index.js"
+	"homepage": "https://github.com/obsius/quick-deep-clone",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/obsius/quick-deep-clone.git"
+	},
+	"bugs": {
+		"url": "https://github.com/obsius/quick-deep-clone/issues"
+	},
+	"keywords": [
+		"clone",
+		"deep",
+		"copy",
+		"quick",
+		"fast",
+		"performance",
+		"performant",
+		"qdclone"
+	]
 }

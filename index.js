@@ -20,10 +20,9 @@ function clone(obj, cast) {
 		// array
 		if (Array.isArray(obj)) {
 
-			// pre allocate if obj is an array with length > 512
-			let retObj = obj.length > 512 ? new Array(obj.length) : [];
+			let retObj = new Array(obj.length);
 
-			for (let i = 0; i < retObj.length; ++i) {
+			for (let i = 0; i < obj.length; ++i) {
 				retObj[i] = clone(obj[i], cast);
 			}
 
