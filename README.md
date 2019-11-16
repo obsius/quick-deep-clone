@@ -6,7 +6,7 @@ Unsafe for use on cyclical data structures. Does not copy functions as object pr
 
 ## Usage
 
-Pass an object to clone as the first variable.  
+Pass an object to clone as the first argument.  
 Pass true as the second argument to construct prototypes, empty or false to instantiate as plain objects.
 
 *Performance comes at a cost:*
