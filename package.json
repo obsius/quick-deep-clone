@@ -1,0 +1,11 @@
+{
+	"name": "quick-deep-clone",
+	"version": "1.0.1",
+	"description": "Quick and dangerous deep clone.",
+	"author": "Jeff Seaman",
+	"contributors": [
+		"Jeff Seaman <mr.jeffrey.seaman@gmail.com> (https://www.ngc6822.com)"
+	],
+	"license": "MIT",
+	"main": "index.js"
+}
