@@ -53,7 +53,7 @@ Package | Time (ms)
 deep-clone@3.0.3 | 1361
 rfdc@1.1.4 | 1048
 qdclone | 441
-qdclone (*\*w/casting*) | 525
+qdclone (*\* with casting*) | 525
 
 *\* only `quick-deep-clone` supports casting prototypes*
 
@@ -100,8 +100,6 @@ function runBench(type, obj, iterations, ...args) {
 	return cloned;
 }
 
-/* object */
-
 function makeX() {
 
 	let x = {
@@ -144,6 +142,9 @@ function makeX() {
 }
 ```
 
-## License
+## Contributing
+Feel free to make changes and submit pull requests whenever.
 
-MIT
+
+## License
+Mousetouch uses the [MIT](https://opensource.org/licenses/MIT) license.
