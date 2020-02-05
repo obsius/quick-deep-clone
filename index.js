@@ -38,13 +38,21 @@ function clone(obj, cast) {
 			// prototyped or plain object
 			} else {
 
-				let retObj = (cast && obj.constructor && obj.constructor.prototype != Object.prototype) ? new obj.constructor() : {};
+				// use clone function if available
+				if (cast && typeof obj.clone == 'function') {
+					return obj.clone();
 
-				for (let key in obj) {
+				// create clone from prototype or plain object
+				} else {
 
-					// ignore functions: too much fuss with scope
-					if (typeof obj[key] != 'function') {
-						retObj[key] = clone(obj[key], cast);
+					let retObj = (cast && obj.constructor && obj.constructor.prototype != Object.prototype) ? new obj.constructor() : {};
+
+					for (let key in obj) {
+
+						// ignore functions: too much fuss with scope
+						if (typeof obj[key] != 'function') {
+							retObj[key] = clone(obj[key], cast);
+						}
 					}
 				}
 
