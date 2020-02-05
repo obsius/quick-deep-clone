@@ -1,7 +1,9 @@
 module.exports = clone;
 
 /**
- * Deep clone an object. Pass true as a second argument to construct prototypes, false to instantiate as plain objects.
+ * Deep clone an object.
+ * Pass true as a second argument to construct prototypes, false to instantiate as plain objects.
+ * Pass true as a thrid argument to suppress calling of a custom clone() function on first recursive call.
  * Unsafe for use on cyclical data structures. Does not copy functions as object properties.
  * 
  * @param { Object } obj - an object to clone
