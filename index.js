@@ -4,10 +4,11 @@ module.exports = clone;
  * Deep clone an object. Pass true as a second argument to construct prototypes, false to instantiate as plain objects.
  * Unsafe for use on cyclical data structures. Does not copy functions as object properties.
  * 
- * @param {Object} obj - an object to clone
- * @param {boolean} [cast = false] - true to cast objects as prototypes
+ * @param { Object } obj - an object to clone
+ * @param { boolean } [ cast = false ] - true to cast objects as prototypes
+ * @param { boolean } [ suppress = false ] - true to supress prototype.clone() on first recursive call
  */
-function clone(obj, cast) {
+function clone(obj, cast, suppress) {
 
 	// falsey primitive, null, or undefined
 	if (!obj) {
@@ -39,7 +40,7 @@ function clone(obj, cast) {
 			} else {
 
 				// use clone function if available
-				if (cast && typeof obj.clone == 'function') {
+				if (cast && !suppress && typeof obj.clone == 'function') {
 					return obj.clone();
 
 				// create clone from prototype or plain object
