@@ -57,9 +57,9 @@ function clone(obj, cast, suppress) {
 							retObj[key] = clone(obj[key], cast);
 						}
 					}
-				}
 
-				return retObj;
+					return retObj;
+				}
 			}
 		}
 	}
